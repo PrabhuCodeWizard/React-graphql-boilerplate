@@ -1,0 +1,52 @@
+.authContainer {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  @media screen and (max-height: 540px) {
+    .sign-in-content, .forgot-pwd-content{
+      justify-content: unset !important;
+      margin-top: 30px;
+    }
+  }
+  @media screen and (max-height: 1600px) {
+    .sign-up-content{
+      justify-content: unset !important;
+      margin: auto 0;
+      padding: 30px 0;
+    }
+  }
+  @media screen and (max-height: 640px) {
+    .reset-pwd-content{
+      justify-content: unset !important;
+      margin-top: 30px;
+    }
+  }
+  .contentBlk {
+    width: 100%;
+    .form-block {
+      height: auto;
+      // -ms-overflow-style: none;  /* Internet Explorer 10+ */
+      // scrollbar-width: none;
+      // &::-webkit-scrollbar {
+      //   display: none;
+      // }
+      .ic-logo-black {
+        margin: 0 auto;
+      }
+    }
+    .formContainer {
+      width: 400px;
+      margin-top: 40px;
+    }
+    @media screen and (max-width: 420px) {
+      .formContainer {
+        width: 100%;
+        padding: 5px;
+        margin: 40px 0px;
+      }
+      .formTitle{
+        text-align: center;
+      }
+    }
+  }
+}
